@@ -1,0 +1,24 @@
+[
+  {
+    "ID": 3,
+    "TITOL": "The Last of Us Part II",
+    "ANY": "2023",
+    "MODALITAT": "Acción",
+    "EMPRESA": "Naughty Dog"
+  },
+  {
+    "ID": 4,
+    "TITOL": "FIFA 22",
+    "ANY": "2021",
+    "MODALITAT": "Deportes",
+    "EMPRESA": "EA Sports"
+  },
+  {
+    "ID": 5,
+    "TITOL": "Park",
+    "ANY": "2014",
+    "MODALITAT": "RPG",
+    "EMPRESA": "Ubisoft"
+  },
+
+]
