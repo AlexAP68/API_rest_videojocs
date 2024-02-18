@@ -97,8 +97,17 @@ app.post('/videojocs', (req, res) => {
             res.status(500).send('Internal Server Error');
             return;
         }
+
+        // Buscar el ID más alto actualmente en la lista
+        let maxId = 0;
+        for (const videojoc of videojocs) {
+            if (videojoc.ID > maxId) {
+                maxId = videojoc.ID;
+            }
+        }
+
         // Generar un nuevo ID automáticamente
-        nuevoVideojoc.ID = videojocs.length + 1; // Asigna un nuevo ID
+        nuevoVideojoc.ID = maxId + 1; // Asigna un nuevo ID
         videojocs.push(nuevoVideojoc);
         escribirDB(videojocs, err => {
             if (err) {
